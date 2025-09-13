@@ -7,7 +7,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
 body { font-family: Arial, sans-serif; margin: 20px; background:#f4f6f8; }
-h1 { text-align:center; margin-bottom:20px; }
+h1 { text-align:left; margin-bottom:20px; }
 .container { display:grid; grid-template-columns:1fr; gap:20px; }
 @media(min-width:768px){ .container { grid-template-columns:1fr 1fr; } }
 .card { background:white; padding:20px; border-radius:16px; box-shadow:0 4px 10px rgba(0,0,0,0.08); }
@@ -39,14 +39,16 @@ h1 { text-align:center; margin-bottom:20px; }
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0px; /* jarak antara gambar dan teks */
+  gap: 5px;         /* jarak logo & teks */
+  font-size: 28px;  /* ubah ukuran teks */
+  font-weight: bold;/* biar lebih tegas */
 }
 
 .header-title img {
   width: 150px;   /* atur ukuran gambar */
   height: auto;  /* bisa diubah sesuai kebutuhan */
   margin-right: : 5px;
-  border-radius: 20px;
+  border-radius: 17px;
 }
 
 .chart-container { position:relative; max-width:100%; height:280px; margin:0 auto; }
@@ -56,7 +58,7 @@ h1 { text-align:center; margin-bottom:20px; }
 
 <h1 class="header-title">
   <img src="400-binfraswil.jpg" alt="Logo">
-  Laporan Rekapan
+  Rekap Laporan
 </h1>
 
 <div class="container">
@@ -178,6 +180,7 @@ fetch(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetID}/values/${s
 </script>
 </body>
 </html>
+
 
 
 
